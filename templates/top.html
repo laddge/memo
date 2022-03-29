@@ -1,2 +1,19 @@
 {% include "header.html" %}
+{% for mddoc in MdList %}
+{% if mddoc.config.Template == "article" %}
+<div class="px-3">
+    <div class="card mt-3 mx-auto col-12 col-md-9">
+        <div class="card-body row d-flex align-items-center">
+            <div class="col">
+                <p class="card-title h5">{{ mddoc.config.Title }}</p>
+                <p class="card-text">{{ mddoc.config.Date }}</p>
+            </div>
+            <div class="col-auto">
+                <a href="{{ mddoc.url }}" class="btn btn-outline-primary">Open</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
 {% include "footer.html" %}
