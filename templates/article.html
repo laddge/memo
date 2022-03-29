@@ -1,8 +1,18 @@
 {% include "header.html" %}
+<style>
+    .article_body h1,h2,h3,h4,h5,h6 {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        width: 100%;
+        border-bottom: 2px solid #D5D5D5;
+    }
+</style>
 <div class="mx-auto col-12 col-md-9 bg-light p-3 min-vh-100">
     <div class="text-center display-3 fw-bold py-5">
         {{ Title }}
     </div>
-    {{ Body }}
+    <div class="article_body">
+        {{ Body }}
+    </div>
 </div>
 {% include "footer.html" %}
