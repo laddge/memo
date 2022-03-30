@@ -61,3 +61,11 @@ body::after {
     bottom: 0;
     background-color: $dark;
 }
+
+#articleBody {
+    h1,h2,h3,h4,h5,h6 {
+        width: 100%;
+        border-bottom: 2px solid #D5D5D5;
+        margin-top: 1rem;
+    }
+}
