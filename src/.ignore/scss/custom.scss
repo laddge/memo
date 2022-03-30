@@ -67,5 +67,10 @@ body::after {
         width: 100%;
         border-bottom: 2px solid #D5D5D5;
         margin-top: 1rem;
+        padding-left: .5ch;
+    }
+    p {
+        padding-left: .5ch;
+        padding-right: .5ch;
     }
 }
