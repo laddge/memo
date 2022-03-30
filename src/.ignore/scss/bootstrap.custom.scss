@@ -42,3 +42,22 @@
 
 // Utilities
 @import "../bootstrap/scss/utilities/api";
+
+body::before,
+body::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    left: 0;
+    z-index: -1;
+}
+body::before {
+    top: 0;
+    background-color: $primary;
+}
+body::after {
+    bottom: 0;
+    background-color: $dark;
+}
