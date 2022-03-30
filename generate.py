@@ -5,7 +5,7 @@ import sass
 
 def get_commit_id():
     return subprocess.run("git rev-parse --short HEAD", shell=True,
-                          capture_output=True, text=True).stdout
+                          capture_output=True, text=True).stdout.strip("\n")
 
 
 tnk = tanuky.Tanuky()
