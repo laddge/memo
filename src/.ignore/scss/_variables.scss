@@ -7,8 +7,6 @@ $h6-font-size: .67rem;
 
 $primary: #4D8FAC;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
-$font-family-base: 'Noto Sans JP', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@700&display=swap');
-$headings-font-family: 'M PLUS 2', sans-serif;
+@import "fonts";
+$font-family-base: "Noto Sans JP", sans-serif;
+$headings-font-family: "M PLUS 2", sans-serif;
