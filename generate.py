@@ -1,6 +1,7 @@
 import subprocess
 import tanuky
 import sass
+import reducss
 
 
 def get_commit_id():
@@ -13,3 +14,5 @@ tnk.globals.update(commit_id=get_commit_id())
 tnk.generate()
 
 sass.compile(dirname=("./src/.ignore/scss", "./dist/css"), output_style="compressed")
+
+reducss.auto("./dist")
