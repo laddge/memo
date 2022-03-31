@@ -1,3 +1,5 @@
 tanuky
 libsass
 reducss
+fonttools
+brotli
